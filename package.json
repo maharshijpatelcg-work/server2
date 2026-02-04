@@ -1,0 +1,19 @@
+{
+  "name": "deployrender",
+  "version": "1.0.0",
+  "description": "auto deploy on render",
+  "keywords": [
+    "node",
+    "express",
+    "render"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maharshi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
