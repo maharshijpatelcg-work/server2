@@ -23,7 +23,29 @@ app.get("/users", (req, res) => {
   res.status(200).json(users);
 });
 
+// app.get("/user/test/:user_id",(req, res)=>{
+//     // console.log("list of users",one);
+//     console.log(req.params);
+//     res.status(200).json(users);
+// })
 
+// app.get("/user/test/:user_id/:user_name",(req, res)=>{
+//     // console.log("list of users",one);
+//     console.log(req.params);
+//     res.status(200).json(users);
+// })
+
+app.get("/user/:test",(req,res)=>{
+    console.log(req.params);
+    console.log("first code");
+    res.status(200).json(users);
+})
+
+app.get("/users/three",(req,res)=>{
+    console.log(req.params);
+    console.log("second code");
+    res.status(200).json(users);
+})
 
 app.get("/users/:id", (req, res) => {
   const userId = Number(req.params.id);
@@ -36,6 +58,8 @@ app.get("/users/:id", (req, res) => {
   res.status(200).json(user);
 });
 
+
+
 app.listen(2007, () => {
-  console.log("Server started on port 2457");
+  console.log("Server started on port 2007");
 });
